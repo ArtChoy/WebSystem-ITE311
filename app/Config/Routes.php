@@ -5,6 +5,9 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::index');
-$routes->get('home', 'Home::index');
-$routes->get('test', 'Test::index');
+
+// Main pages routes
+$routes->get('/', 'Home::index');          // Homepage route
+$routes->get('/home', 'Home::index');      // Alternative homepage route
+$routes->get('/about', 'Home::about');     // About page route
+$routes->get('/contact', 'Home::contact'); // Contact page route
